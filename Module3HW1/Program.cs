@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var collection = new CollectionGeneric<int>();
+            
+            for (int i = 0; i < 11; i++)
+            {
+                collection.Add(i);
+            }
+            foreach (int item in collection)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
